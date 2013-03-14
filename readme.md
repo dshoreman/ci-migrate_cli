@@ -1,5 +1,11 @@
 # CodeIgniter CLI Migrations
 
+## Installation
+
+Clone the repo (or just ```migrate.php```) into your ```application/controllers``` directory.
+
+Load up a shell (you already did that, right?) and change to your project's base dir. Migrate!*
+
 ## Usage
 
 Migrate to latest version
@@ -25,3 +31,8 @@ Rollback to some other version
 Rollback all the migrations
 
 ```php index.php migrate uninstall```
+
+
+* * *
+
+\* I'm assuming you actually have some migrations to run. If not, go read the [user_guide](http://ellislab.com/codeigniter/user_guide/).
