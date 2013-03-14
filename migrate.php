@@ -2,6 +2,8 @@
 
 class Migrate extends CI_Controller {
 
+    private $class_version = '1.0';
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -116,4 +118,11 @@ class Migrate extends CI_Controller {
 		$row = $this->db->get('migrations')->row();
 		return $row ? $row->version : 0;
 	}
+
+    public function about()
+    {
+        echo "CI-Migrate_CLI v".$this->class_version;
+        echo "\nCheck http://github.com/dshoreman/ci-migrate_cli/ for updates";
+        exit;
+    }
 }
